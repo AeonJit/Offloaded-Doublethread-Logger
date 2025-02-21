@@ -64,7 +64,7 @@ private:
         auto tm = *std::localtime(&t);
 
         std::ostringstream filename;
-        filename << std::put_time(&tm, "%Y-%m-%d_%H-%M-%S") << ".log";
+        filename << std::put_time(&tm, "%Y-%m-%d__%H:%M:%S") << ".log";
         return filename.str();
     }
 
